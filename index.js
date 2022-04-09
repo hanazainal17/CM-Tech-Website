@@ -33,13 +33,13 @@ let scroll = new SmoothScroll('a[href*="#"]',{
 
 });
 
-//send email using smtpjs
-//function sendEmail() {
-   // Email.send({
-   // SecureToken: "624596a8-5d9d-4180-8430-f19a591bf234",
-   //  To : 'hana@cmtech.asia',
-   //  From : document.getElementById("email").value,
-   //  Subject : document.getElementById("subject").value,
-   //  Body : "<br>" + document.getElementById("message").value
- //}).then(message => alert(message)
-//);}
+// send Email
+function sendEmail() {
+   let fName = document.getElementById("firstName").value;
+   let lName = document.getElementById("lastName").value;
+   let subjectLine = document.getElementById("subject").value;
+   let body = document.getElementById("message").value;
+
+   window.location.href = "mailto:hana@cmtech.asia?subject="+subjectLine+"&body=Hello, I am "+fName+" "+lName+"%0D%0A"+"%0D%0A"+body;
+
+}
