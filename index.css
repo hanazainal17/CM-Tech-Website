@@ -365,8 +365,12 @@ header .btn {
 /*Contact Us*/
 
 .contact {
-    height: 100vh;
-    background-color: #0077b6;
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background: url(media/contact-bg.png);
+    background-size: cover;
+    background-position: center;
 }
 
 .contact-wrap {
