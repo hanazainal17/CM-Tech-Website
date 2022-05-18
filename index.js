@@ -22,9 +22,6 @@ function sendEmail() {
     let subjectLine = document.getElementById("subject").value;
     let body = document.getElementById("msg").value;
  
-    //window.location.href = "mailto:hadi@cmtech.asia,izad@cmtech.asia?subject="+subjectLine+"&body=Hello, I am "+fName+" "+"%0D%0A"+"%0D%0A"+body;
- 
-    window.location.href = "mailto:hana@cmtech.asia?subject="+subjectLine+"&body=Hello, I am "+fName+" "+"%0D%0A"+"%0D%0A"+body;
- 
+    window.location.href = "mailto:hadi@cmtech.asia,izad@cmtech.asia?subject="+subjectLine+"&body=Hello, I am "+fName+" "+"%0D%0A"+"%0D%0A"+body;
  }
 
